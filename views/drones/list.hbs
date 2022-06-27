@@ -3,5 +3,7 @@
 <h5 class="card-title"> Name : {{name}}</h5>
 <p class="card-text"> Propellers :{{propellers}}</p>
 <p class="card-text"> Max Speed :{{maxSpeed}}</p>
-
+<a href="/drones/{{_id}}/edit">Edit</a>
+<form action="/drone-delete/{{response.id}}" method="POST"> 
+    <button type="submit">Delete </button>
 {{/each}}
